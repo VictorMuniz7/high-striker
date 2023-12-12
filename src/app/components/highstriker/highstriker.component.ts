@@ -51,7 +51,7 @@ export class HighstrikerComponent {
   }
 
   playSound(){
-    const audio = new Audio('https://raw.githubusercontent.com/VictorMuniz7/high-striker/tree/gh-pages/assets/ram-bell-sound.mp3')
+    const audio = new Audio('https://raw.githubusercontent.com/VictorMuniz7/high-striker/main/src/assets/ram-bell-sound.mp3')
     audio.volume = 0.2
     audio.play();
   }
