@@ -14,11 +14,11 @@ export class HighstrikerComponent {
   count: number = 3
 
   gameTimeInterval: any
-  timer: number = 1
+  timer: number = 8
 
   screen: number = 1
 
-  clicks: number = 80
+  clicks: number = 0
 
   scoreService = inject(ScoreService)
 
