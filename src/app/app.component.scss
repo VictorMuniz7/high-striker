@@ -1,0 +1,42 @@
+.back{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  background: rgb(93,79,107);
+  background: linear-gradient(135deg, rgba(93,79,107,1) 8%, rgba(74,61,87,1) 27%, rgba(60,45,75,1) 49%, rgba(81,53,108,1) 79%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 68em){
+
+  .back{
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    div{
+      width: 54%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      gap: 3em;
+    }
+  }
+}
+
+@media screen and (min-width: 80em){
+
+  .back{
+
+    div{
+      width: 45%;
+
+    }
+  }
+}

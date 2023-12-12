@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+
+  cursor: url(../../../../DREAM/Intermediate/card-memory-game/src/assets/card-images/11.png);
+}
+
+:root{
+  --red: #EC4444;
+  --off-yellow: #b4b447;
+  --on-yellow: #FFFF00;
+  --purple: #4a3d57;
+  --white: #ffffff;
+  --wine: #692F2F;
+}

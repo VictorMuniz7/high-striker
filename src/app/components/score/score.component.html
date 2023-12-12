@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><i class="fa-solid fa-star"></i>Score<i class="fa-solid fa-star"></i></h1>
+  <div class="score-list">
+    @for (score of scoreList; track $index) {
+      <div>
+        <p>{{score.clicks}} clicks</p>
+        <p>{{score.date}}</p>
+      </div>
+    }
+  </div>
+</div>

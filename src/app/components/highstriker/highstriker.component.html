@@ -1,0 +1,41 @@
+<div class="highstriker-box">
+  <div class="highstriker">
+    <div class="base">
+      <div class="button" (click)="screen === 3 ? listenClicks() : null"></div>
+    </div>
+    <div class="tower">
+      <div class="score">
+        <div class="score-ball" [style.transform]="screen === 4 ? 'translateY(-'+ (clicks * 3.7 > 305 ? 305 : clicks * 3.7) + 'px)' : ''"></div>
+        <p>-80</p>
+        <p>-70</p>
+        <p>-60</p>
+        <p>-50</p>
+        <p>-40</p>
+        <p>-30</p>
+        <p>-20</p>
+        <p>-10</p>
+        <p>-0</p>
+      </div>
+      <div class="bell" [classList]="clicks >= 82 && screen === 4 ? 'bell ring-bell' : 'bell'">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  @switch (screen) {
+    @case (1) {
+      <button class="start-button" (click)="start()">Start game</button>
+    }
+
+    @case (2) {
+      <p class="start-timer">{{count}}</p>
+    }
+
+    @case (3) {
+      <p class="game-timer">{{timer.toFixed(2)}}</p>
+    }
+    @case (4) {
+      <p class="result">Your score: {{clicks}} clicks!</p>
+      <button class="start-button" (click)="reset()">Save score and play again</button>
+    }
+  }
+</div>
